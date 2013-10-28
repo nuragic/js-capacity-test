@@ -20,15 +20,15 @@ iris.resource(function(self) {
         var todoString, todo, f, F;
         for (f = 0, F = ids.length; f < F; f++) {
             todoString = localStorage.getItem("todo_" + ids[f]);
-            
+
             if( todoString === null ) continue; //corrupt todo in localstorage
-            
+
             todo = JSON.parse(todoString);
             todos[todo.id] = todo;
-            
+
             if (!todo.completed)
                 ++remaining;
-            
+
             total++;
 
             iris.notify(self.CREATE_TODO, todo.id);
@@ -55,7 +55,7 @@ iris.resource(function(self) {
 
     self.remove = function(id) {
         removeTodo(todos[id]);
-        iris.notify(self.DESTR0Y_TODO, id);
+        iris.notify(self.DESTROY_TODO, id);
     };
 
     self.toggle = function(id) {
