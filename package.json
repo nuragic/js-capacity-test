@@ -7,6 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "connect": "~2.10.1"
+    "grunt": "0.4.1",
+    "grunt-open": "~0.2.2",
+    "grunt-express": "~1.2.1",
+    "grunt-contrib-watch": "~0.5.3"
   }
 }
