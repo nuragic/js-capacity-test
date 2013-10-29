@@ -15,11 +15,9 @@ Of course you can cheat with times, but is up to you being honest with yourself.
 Instructions:
 
 - Install node.js ( http://nodejs.org/ )
-- Install npm ( https://npmjs.org/ )
-- Install connect node.js module ( *npm install connect* )
+- Install project dependencies ( *npm install* )
 - Fork the project and clone it in your local git repository
-- Launch the server *node todo-node.js* (it will start listening in localhost:8181 )
-- Access in your favorite web browser to localhost:8181
+- Launch the *grunt server* (it will start listening to localhost:3000; every time you change a file, the browser will automatically refresh the page)
 - Fix the code errors
 - Send a pull request with the code fixed.
 
